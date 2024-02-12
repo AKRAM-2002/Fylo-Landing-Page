@@ -1,0 +1,51 @@
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 70px; 
+    background-color: white
+
+}
+
+.logo{
+    width: 150px;
+}
+
+.header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul li{
+    list-style: none;
+    padding-left: 3rem;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .header {
+        flex-direction: row;
+        padding: 40px 10px; 
+        
+    }
+    .logo{
+        width: 150px;
+        padding-left: 10px;
+    }
+
+    .header nav ul {
+        flex-direction: row;
+        margin-top: 0; 
+        padding-right: 20px;
+    }
+
+    nav ul li {
+        padding-left: 1rem; /* Add some horizontal spacing for larger screens */
+    }
+}

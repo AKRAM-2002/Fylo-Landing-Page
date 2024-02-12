@@ -1,0 +1,98 @@
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 70px;
+    margin-bottom: 4rem;
+    background-color: white;
+}
+
+.hero-image{
+    width: 35rem;
+}
+
+.hero-left{
+    width: 120%;
+}
+
+.hero-left p{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.hero-right{
+    position: absolute;
+    display: flex;
+    right:  50px;
+}
+
+.hero h1{
+    font-size: 2/5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.hero input{
+    width: 65%;
+    padding: 0.8rem;
+    border: 1px solid var(--very-dark-blue);
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+.submit-btn{
+    background-color: var(--very-dark-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    
+}
+@media screen and (max-width: 768px) {
+    .hero h1{
+        font-size: 1.8rem;
+    }
+    .hero-image{
+        width: 25rem;
+    }
+    .hero {
+        display: flex; /* Switch to flexbox for mobile */
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: -2rem;
+    }
+    
+
+    .hero-left {
+        width: 100%; /* Take full width on mobile */
+    }
+
+    .hero-right {
+        position: static; /* Remove absolute positioning on mobile */
+        margin-top: 20px; /* Add some spacing between the sections on mobile */
+    }
+
+    .hero input {
+        width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 0.5rem; 
+    }
+    .submit-btn{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 468px) {
+    .hero h1{
+        font-size: 1.7rem;
+    }
+
+}
